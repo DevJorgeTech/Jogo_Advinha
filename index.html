@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>A arte da adivinhação</h1>
+
+    <div id="blocoInicial">
+        <p>Escolha o nível de dificuldade:</p>
+        <input type="radio" name="dificuldade" value="facil"> Fácil (10 tentativas) 
+        <br>
+        <input type="radio" name="dificuldade" value="medio"> Médio (7 tentativas)
+        <br>
+        <input type="radio" name="dificuldade" value="dificil"> Difícil (5 tentativas)
+        <br>
+        <button id="btnCriarJogo">Criar jogo</button>
+    </div>
+    
+    <div id="blocoJogo">
+        <p>Tente adivinhar um número entre 0 e 100!</p>
+    
+        <input type="text" id="entrada">
+        <br>
+        <button id="btnEnviarPalpite">Enviar Palpite</button>
+        
+        <p id="saida"></p>
+        
+        <p id="palpites"></p>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
